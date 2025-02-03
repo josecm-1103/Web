@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carta de San Valentín</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #fff0f5;
+            margin: 0;
+            padding: 0;
+        }
+        .card {
+            background: white;
+            width: 60%;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #ff4d4d;
+        }
+        p {
+            color: #333;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff4d4d;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #cc0000;
+        }
+    </style>
+
+    <div class="card">
+        <h1>𝓕𝓸𝓻 𝔂𝓸𝓾 ❤️  </h1>
+        <p style="color: #FFC0CB; ">𝔔𝔲𝔢 𝔢𝔰𝔱𝔢 𝔡í𝔞 𝔢𝔰𝔱𝔢 𝔩𝔩𝔢𝔫𝔬 𝔡𝔢 𝔞𝔪𝔬𝔯, 𝔣𝔢𝔩𝔦𝔠𝔦𝔡𝔞𝔡 𝔶 𝔪𝔬𝔪𝔢𝔫𝔱𝔬𝔰 𝔥𝔢𝔯𝔪𝔬𝔰𝔬𝔰, 𝔠𝔲𝔢𝔫𝔱𝔞 𝔠𝔬𝔫𝔪𝔦𝔤𝔬 𝔢𝔫 𝔠𝔞𝔡𝔞 𝔠𝔬𝔰𝔞.</p>
+
+        <div class="buttons">
+             <button><a class="button" href="index.html" target="_blank"><em>ℝ𝕖𝕘𝕣𝕖𝕤𝕒𝕣</em>
+    </a>         </button>
+        </div>
+    </div>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pétalos Cayendo</title>
+    <style>
+        body {
+            background-color: #ffe6f2;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .petalo {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: pink;
+            opacity: 0.8;
+            border-radius: 50% 60% 60% 50%;
+            transform: rotate(45deg);
+            box-shadow: inset 2px -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes caer {
+            0% { transform: translateY(-50px) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+    </style>
+
+    <script>
+        function crearPetalo() {
+            const petalo = document.createElement("div");
+            petalo.classList.add("petalo");
+
+            // Posición inicial aleatoria en la parte superior
+            petalo.style.left = Math.random() * window.innerWidth + "px";
+            petalo.style.top = "-50px";
+
+            // Tamaño aleatorio
+            let size = Math.random() * 15 + 10;
+            petalo.style.width = size + "px";
+            petalo.style.height = size + "px";
+
+            // Opacidad aleatoria
+            petalo.style.opacity = Math.random() * 0.5 + 0.5;
+
+            // Animación con duración aleatoria
+            let duracion = Math.random() * 5 + 3;
+            petalo.style.animation = `caer ${duracion}s linear infinite`;
+
+            document.body.appendChild(petalo);
+
+            // Eliminar pétalo después de caer
+            setTimeout(() => {
+                petalo.remove();
+            }, duracion * 1000);
+        }
+
+        // Generar pétalos continuamente
+        setInterval(crearPetalo, 300);
+    </script>
+
+</body>
+</html>
+      </p>
+      <audio id="audio1" autoplay controls loop>
+          <source src="audio.mp3" type="audio/mpeg">
+              
+      </audio>
+
+
+
+
+
+
+
+
+
